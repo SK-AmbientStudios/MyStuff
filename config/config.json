@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-world-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/helloWorld/HelloWorldWebPart.js",
+          "manifest": "./src/webparts/helloWorld/HelloWorldWebPart.manifest.json"
+        }
+      ]
+    },
+    "my-shortcuts-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myShortcuts/MyShortcutsWebPart.js",
+          "manifest": "./src/webparts/myShortcuts/MyShortcutsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
+    "MyShortcutsWebPartStrings": "lib/webparts/myShortcuts/loc/{locale}.js"
+  }
+}
